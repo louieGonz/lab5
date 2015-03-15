@@ -122,7 +122,7 @@ module test_lab5(bit_clk,valid,slot0,slot1,slot2,slot3,slot4,count,vdata,lpcm,rp
 		
 	end // end of AC'97 frame making
 	
-
+	//controls what addr and data write
 	always @(posdege clk)begin
 		if(count == 255)begin
 			frame <= frame + 1;
